@@ -1,0 +1,135 @@
+/*
+Colour Palette: http://paletton.com/#uid=53p0u0kmcaDnQ3Jew5Bpktufx+Z
+*/
+
+body {
+    height: 100%;
+    color: #FFFFE8;
+    background-color: #030D10;
+    font-family: Helvetica,sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+a {
+    text-decoration: none;
+}
+
+h2 {
+    color: #24AC52;
+}
+
+.parallax {
+    background-attachment: fixed;
+}
+
+.v-center {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.menu {
+    color: #88E1FF;
+    width: 100%;
+    top: 1.5em;
+    position: fixed;
+    padding: 0;
+    margin: 0;
+    text-align: center;
+    z-index: 2;
+}
+
+ul.menubar {
+    border-radius: 2em;
+    background-color: #030D10BB;
+    font-size: 1.5em;
+    list-style-type: none;
+    margin: 0;
+    padding: 0 0.5em;
+    overflow: hidden;
+    display: inline-block;
+}
+
+ul.menubar li {
+    float: left;
+    margin: 0.5em 0.5em;
+}
+
+ul.menubar a {
+    border-radius: 1em;
+    border: #237793 solid 2px;
+    color: #88E1FF;
+    display: block;
+    padding: 0.5em 1em 0.5em;
+    text-align: center;
+    text-decoration: none;
+    transition: background-color 0.5s ease-in;
+}
+
+ul.menubar a:hover {
+    background-color: #237793;
+}
+
+li.button-selected a {
+    color: #83FFAD;
+    background-color: #133E22;
+}
+
+li.button-selected a:hover {
+    background-color: #133E22;
+}
+
+.light-content, .content {
+    padding: 2em;
+    margin: 2em;
+    border-radius: 2em;
+}
+
+.light-content img, .content img {
+    float: right;
+    clear: none;
+}
+
+.content {
+    color: #FFFFE8;
+    background-color: #01080BAA;
+}
+
+.light-content {
+    color: #01080B;
+    background-color: #FFFFE8AA;
+    transition: background-color 0.5s ease-in;
+}
+
+.light-content-link:hover {
+    background-color: #E0EEF2;
+}
+
+.content-heading {
+    padding: 0 2em;
+    margin: 0 2em;
+}
+
+@media (max-width: 1280px) {
+    .light-content, .content {
+        padding: 1em;
+        margin: 1em;
+    }
+}
+
+@media (max-width: 800px) {
+    ul.menubar {
+        display: none;
+    }
+
+    .light-content, .content {
+        padding: 0.5em;
+        margin: 0.5em;
+    }
+
+    .content-heading {
+        padding: 0 1em;
+        margin: 0 1em;
+    }
+}
