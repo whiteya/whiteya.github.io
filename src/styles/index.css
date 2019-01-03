@@ -1,7 +1,7 @@
 body {
     background-attachment: fixed;
     background-repeat: repeat-y;
-    background-image: url("../assets/code-dark.png");
+    background-image: url("../images/code-dark.png");
     background-size: 30%;
 }
 
@@ -13,7 +13,7 @@ body {
 .light-code-background {
     color: #030D10;
     background-color: #FFFFE8;
-    background-image: url("../assets/code-light.png");
+    background-image: url("../images/code-light.png");
     background-repeat: repeat-y;
     background-size: 30%;
 }

@@ -1,0 +1,42 @@
+{
+  "name": "whiteya.github.io",
+  "version": "1.0.0",
+  "description": "This is Adam White's personal website.",
+  "private": true,
+  "scripts": {
+    "test": "mocha --require @babel/register --exit",
+    "coverage": "nyc --reporter=text --reporter=lcov npm test",
+    "build": "gulp"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/whiteya/whiteya.github.io.git"
+  },
+  "author": "Adam White",
+  "bugs": {
+    "url": "https://github.com/whiteya/whiteya.github.io/issues"
+  },
+  "homepage": "https://github.com/whiteya/whiteya.github.io#readme",
+  "devDependencies": {
+    "@babel/core": "^7.2.2",
+    "@babel/preset-env": "^7.2.3",
+    "@babel/register": "^7.0.0",
+    "canvas": "^2.2.0",
+    "del": "^3.0.0",
+    "eslint": "^5.4.0",
+    "gulp": "^4.0.0",
+    "gulp-babel": "^8.0.0",
+    "gulp-cssnano": "^2.1.2",
+    "gulp-eslint": "^1.1.1",
+    "gulp-htmlmin": "^2.0.0",
+    "gulp-if": "^2.0.1",
+    "gulp-imagemin": "^2.4.0",
+    "gulp-newer": "^1.2.0",
+    "gulp-sass": "^3.0.0",
+    "gulp-uglify": "^1.5.4",
+    "gulp-useref": "^3.1.0",
+    "jsdom": "^13.1.0",
+    "mocha": "^5.2.0",
+    "nyc": "^13.1.0"
+  }
+}

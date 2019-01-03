@@ -1,0 +1,14 @@
+{
+    "root": true,
+    "extends": "eslint:recommended",
+    "parserOptions": {
+        "ecmaVersion": 6,
+        "sourceType": "module"
+    },
+    "env": {
+        "browser": true
+    },
+    "rules": {
+        "indent": [2, 2]
+    }
+}
