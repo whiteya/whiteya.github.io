@@ -71,6 +71,12 @@ gulp.task('concat-min', function() {
     .pipe(gulp.dest(path.build));
 });
 
+gulp.task('copy-projects', function() {
+  var out = path.build + 'projects/';
+  return gulp.src(path.src + 'projects/**')
+    .pipe(gulp.dest(out))
+})
+
 gulp.task('clean', function() {
   return del([path.build, path.tmp]);
 });
@@ -79,6 +85,7 @@ gulp.task('default',
   gulp.series(
     'clean',
     gulp.parallel('lint', 'js', 'images', 'styles', 'html'),
-    'concat-min'
+    'concat-min',
+    'copy-projects'
   )
 );
